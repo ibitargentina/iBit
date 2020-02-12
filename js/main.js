@@ -152,3 +152,9 @@ jQuery(document).ready(function( $ ) {
 
 
 });
+
+function openModal(src){
+  var completeSrc = 'img/demos/' + src + '.mp4';
+  $('#myModal iframe').attr("src", completeSrc);
+  $('#myModal').modal('show');
+}
