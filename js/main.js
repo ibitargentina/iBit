@@ -165,7 +165,15 @@ function openModal(src){
   }else{
     var completeSrc = 'img/demos720/' + src + '.mp4';
   }
-  
   $('#myModal iframe').attr("src", completeSrc);
   $('#myModal').modal('show');
+  setTimeout(
+     function() 
+     {
+      $('#myModal .modal-loading').hide();
+      $('#myModal .embed-responsive').show();
+       
+     }, 5000);
+  
+  
 }

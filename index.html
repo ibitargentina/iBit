@@ -478,9 +478,28 @@
 
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-          </button>        
+          </button> 
+          <div class="modal-loading"> 
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <circle id="test" cx="40" cy="40" r="32"></circle>
+                </svg>
+            </div>
+
+            <div class="loader triangle">
+                <svg viewBox="0 0 86 80">
+                    <polygon points="43 8 79 72 7 72"></polygon>
+                </svg>
+            </div>
+
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <rect x="8" y="8" width="64" height="64"></rect>
+                </svg>
+            </div>  
+          </div>   
           <!-- 16:9 aspect ratio -->
-          <div class="embed-responsive embed-responsive-16by9">
+          <div class="embed-responsive embed-responsive-16by9" style="display: none;">
             <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
           </div>
           
