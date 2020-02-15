@@ -154,7 +154,7 @@ jQuery(document).ready(function( $ ) {
 });
 
 function openModal(src){
-  $('#myModal .embed-responsive').hide();
+  $('#myModal .modal-video').hide();
   $('#myModal .modal-loading').show();
   var isMobile = false; //initiate as false
   // device detection
@@ -176,7 +176,7 @@ function openModal(src){
      function() 
      {
       $('#myModal .modal-loading').hide();
-      $('#myModal .embed-responsive').show();
+      $('#myModal .modal-video').show();
        
      }, 5000);
   
